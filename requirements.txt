@@ -1,0 +1,11 @@
+streamlit
+pinecone-client
+sentence-transformers
+yfinance
+requests
+pandas
+plotly
+openai
+groq
+python-dotenv
+beautifulsoup4
