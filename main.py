@@ -42,7 +42,10 @@ ticker_to_cik_mapping = load_ticker_to_cik_mapping()
 
 # Initialize OpenAI client
 
-client=OpenAI(api_key=os.getenv('GROQ_API_KEY'), base_url="https://api.groq.com/openai/v1")
+client = OpenAI(
+  base_url = "https://api.groq.com/openai/v1",
+  api_key=os.getenv('GROQ_API_KEY')
+)
 
 # Initialize Pinecone
 pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
